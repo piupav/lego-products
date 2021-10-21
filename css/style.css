@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#home {
+  background: linear-gradient(90deg, aqua, pink 50%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  transform: translate3d(0, 0, 0);
+}
+
+
+
+/* Стили фона при нажатии на кнопки */
+/* Стили фона при нажатии на кнопки */
+/* Стили фона при нажатии на кнопки */
+.styleBGblock {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 1;
+  background-repeat: repeat; 
+  background-position: 100%, 0em;
+  
+}
+#home .home-overlay {
+  z-index: 50;
+  background: url(../img/pattern.png) #3060cd20;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+/* Стили фона при нажатии на кнопки */
+/* Стили фона при нажатии на кнопки */
+/* Стили фона при нажатии на кнопки */
+
+
+
+/* Стили текста при нажатии на кнопки */
+/* Стили текста при нажатии на кнопки */
+/* Стили текста при нажатии на кнопки */
+.style-title-prod {
+  width: 100%;
+  color: white;
+  z-index: 155;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+/* Стили текста при нажатии на кнопки */
+/* Стили текста при нажатии на кнопки */
+/* Стили текста при нажатии на кнопки */
+
+
+
+/* Кнопки */
+/* Кнопки */
+/* Кнопки */
+ul {
+  margin-left: 3%;
+  position: relative;
+  transform: rotate(-45deg) skew(-45deg, 45deg);
+  list-style: none;
+  z-index: 200;
+}
+
+.list-item {
+  background: #000;
+  color: #575757;
+  text-align: center;
+  height: 3em;
+  width: 6em;
+  /* vertical-align: middle; */
+  line-height: 3em;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  /* box-shadow: -2em 1.5em 0 #e1e1e1; */
+  transition: all 0.25s linear;
+}
+.list-item:hover {
+  background: #ff6e42;
+  color: #fffcfb;
+  transform: translate(0.9em, -0.9em);
+  transition: all 0.25s linear;
+  box-shadow: -2em 2em 0 #262626;
+}
+
+.list-item:hover:before, .list-item:hover:after {
+  transition: all 0.25s linear;
+}
+.list-item:before, .list-item:after {
+  content: "";
+  position: absolute;
+  transition: all 0.25s linear;
+  width: 1em;
+}
+
+.list-item:before {
+  height: 3em;
+  background: #121212;
+  top: 0.5em;
+  left: -1em;
+  transform: skewY(-45deg);
+}
+.list-item:hover:before {
+  background: #b65234;
+  width: 2em;
+  top: 1em;
+  left: -2em;
+}
+
+.list-item:after {
+  height: 6em;
+  background: #181818;
+  bottom: -3.5em;
+  left: 2em;
+  transform: rotate(90deg) skew(0, 45deg);
+}
+.list-item:hover:after {
+  background: #b65234;
+  width: 2em;
+  bottom: -4em;
+  left: 1em;
+  height: 6em;
+}
+/* Кнопки */
+/* Кнопки */
+/* Кнопки */
